@@ -23,7 +23,7 @@ You can edit the company name to match your own and alter these settings if need
 <true/>
 ```
 
-To find the Bund`elID for an app you can use 
+To find the BundelID for an app you can use 
 PlistBuddy
 
 `/usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' /Applications/Safari.app/Contents/Info.plist
