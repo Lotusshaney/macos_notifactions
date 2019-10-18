@@ -4,6 +4,7 @@ Simple script that will take multiple bundleID's from Applications and produce a
 
 You can edit the company name to match your own and alter these settings if needed
 
+```xml
 <key>AlertType</key>
 <integer>1</integer>
 <key>BadgesEnabled</key>
@@ -20,8 +21,9 @@ You can edit the company name to match your own and alter these settings if need
 <true/>
 <key>SoundsEnabled</key>
 <true/>
+```
 
-To find the BundelID for an app you can use 
+To find the Bund`elID for an app you can use 
 PlistBuddy
 
 `/usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' /Applications/Safari.app/Contents/Info.plist
