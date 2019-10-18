@@ -1,6 +1,6 @@
-Simple Notification Supressor
+# Simple Notification Supressor
 
-Simple script that will take multiple bundleID's from Applications and produce a Config Profile that will allow those Applications to be notifcation whitelisted.
+#### Simple script that will take multiple bundleID's from Applications and produce a Config Profile that will allow those Applications to be notifcation whitelisted.
 
 You can edit the company name to match your own and alter these settings if needed
 
@@ -42,7 +42,7 @@ com.apple.Safari
 `
 com.apple.RemoteDesktop
 
-or use my BID automator app to select multiple apps and output a file containing all of the BundleID's
+or use my **BID** automator app to select multiple apps and output a file containing all of the BundleID's
 
 Example of Usage
 
