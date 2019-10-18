@@ -4,7 +4,7 @@ Simple script that will take multiple bundleID's from Applications and produce a
 
 You can edit the company name to match your own and alter these settings if needed
 
-`<key>AlertType</key>
+<key>AlertType</key>
 <integer>1</integer>
 <key>BadgesEnabled</key>
 <true/>
@@ -19,7 +19,7 @@ You can edit the company name to match your own and alter these settings if need
 <key>ShowInNotificationCenter</key>
 <true/>
 <key>SoundsEnabled</key>
-<true/>`
+<true/>
 
 To find the BundelID for an app you can use 
 PlistBuddy
