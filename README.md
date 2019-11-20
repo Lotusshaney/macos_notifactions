@@ -22,6 +22,7 @@ You can edit the company name to match your own and alter these settings if need
 <key>SoundsEnabled</key>
 <true/>
 ```
+To reset all Notification Alerts delete ~/Library/Preferences/com.apple.ncprefs.plist and then restart	
 
 To find the BundelID for an app you can use 
 PlistBuddy
@@ -44,7 +45,14 @@ com.apple.RemoteDesktop
 
 or use my **BID** automator app to select multiple apps and output a file containing all of the BundleID's
 
-Example of Usage
+To Find Previous Bundle ID or Application Domains from past Prompts
+
+`sqlite3 "$(getconf DARWIN_USER_DIR)/com.apple.notificationcenter/db2/db" "select * from app;"`
+or
+`sqlite3 "$(getconf DARWIN_USER_DIR)/com.apple.notificationcenter/db2/db" "select * from app;" | cut -d \| -f2- | sed 's/\|//g' | sort`
+
+
+### Example of Usage
 
 `sns.sh com.microsoft.autoupdate.fba com.microsoft.companyportal com.microsoft.edge.canary com.microsoft.excel com.microsoft.onedrive com.microsoft.outlook com.microsoft.rdc.macos com.microsoft.skypeforbusiness.webmeetings com.microsoft.word`
 
